@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Alliah\\source\\repos\\ProjectSept18_AppDev\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63629ED4-5051-4A31-9A7F-66E4179DA8B2}|ProjectSept18_AppDev\\ProjectSept18_AppDev.csproj|c:\\users\\alliah\\source\\repos\\projectsept18_appdev\\projectsept18_appdev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63629ED4-5051-4A31-9A7F-66E4179DA8B2}|ProjectSept18_AppDev\\ProjectSept18_AppDev.csproj|solutionrelative:projectsept18_appdev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alliah\\source\\repos\\ProjectSept18_AppDev\\ProjectSept18_AppDev\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectSept18_AppDev\\Program.cs",
+              "ToolTip": "C:\\Users\\Alliah\\source\\repos\\ProjectSept18_AppDev\\ProjectSept18_AppDev\\Program.cs",
+              "RelativeToolTip": "ProjectSept18_AppDev\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-18T04:21:35.703Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\bin\Debug\net10.0\ProjectSept18_AppDev.exe
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\bin\Debug\net10.0\ProjectSept18_AppDev.deps.json
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\bin\Debug\net10.0\ProjectSept18_AppDev.runtimeconfig.json
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\bin\Debug\net10.0\ProjectSept18_AppDev.dll
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\bin\Debug\net10.0\ProjectSept18_AppDev.pdb
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ProjectSept18_AppDev.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ProjectSept18_AppDev.AssemblyInfoInputs.cache
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ProjectSept18_AppDev.AssemblyInfo.cs
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ProjectSept18_AppDev.csproj.CoreCompileInputs.cache
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ProjectSept18_AppDev.dll
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\refint\ProjectSept18_AppDev.dll
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ProjectSept18_AppDev.pdb
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ProjectSept18_AppDev.genruntimeconfig.cache
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ref\ProjectSept18_AppDev.dll
+C:\Users\Alliah\source\repos\ProjectSept18_AppDev\ProjectSept18_AppDev\obj\Debug\net10.0\ProjectS.A3FF2151.Up2Date
