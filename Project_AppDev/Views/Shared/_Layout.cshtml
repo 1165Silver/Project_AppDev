@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,6 +7,13 @@
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <!-- Fonts: Archivo (wide, bold name) & Poppins for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700;125,800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- add CSS file for designing, note: u must follow the layout -->
+    @await RenderSectionAsync("Styles", required: false)
     <link rel="stylesheet" href="~/Project_AppDev.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -26,16 +33,30 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <!-- add the tab of our profile --!>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="Index">Profile</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <!-- adjust the layout if you will open the profile, else remain the same for home and privacy--!>
+    @if (ViewData["FullWidth"] is true)
+    {
+        <main role="main">
             @RenderBody()
         </main>
-    </div>
+    }
+    else
+    {
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    }
 
     <footer class="border-top footer text-muted">
         <div class="container">
