@@ -1,0 +1,128 @@
+/* =========================================================
+   Katrice's profile page — wwwroot/css/lapuz.css
+   Every rule starts with .kl so it only styles this page
+   and never changes the shared navbar or footer.
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;   /* About Me / My Pets / Hobbies links glide */
+}
+
+/* Whole page area (replaces the old "body" rule) */
+.kl {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding-bottom: 40px;
+}
+
+/* ---------- Header ---------- */
+.kl-header {
+    text-align: center;
+    padding: 30px;
+}
+
+.kl-header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.kl-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.kl-header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kl-profile-picture img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.kl-navigation {
+    text-align: left;
+}
+
+.kl-navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+}
+
+.kl-navigation a:hover {
+    background-color: #333;
+}
+
+.kl-highlight {
+    text-decoration: underline;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* ---------- Sections ---------- */
+.kl-section {
+    padding: 40px;
+    text-align: center;
+    scroll-margin-top: 16px;
+}
+
+.kl-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.kl-three-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.kl-column {
+    width: 300px;
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+}
+
+.kl-column h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.kl-column p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* ---------- Pets ---------- */
+.kl-pets-container {
+    display: flex;
+    justify-content: center;
+}
+
+.kl-pet {
+    margin: 20px;
+    text-align: center;
+}
+
+.kl-pet img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kl-pet-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
