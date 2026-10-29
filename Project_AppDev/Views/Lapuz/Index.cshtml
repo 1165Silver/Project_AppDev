@@ -1,0 +1,74 @@
+@model Project_AppDev.Models.LapuzViewModel
+@{
+    ViewData["Title"] = "Katrice's Profile";
+    ViewData["FullWidth"] = true;   // use the full screen width (set up in _Layout)
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/lapuz.css" asp-append-version="true" />
+}
+
+<div class="kl">
+
+    <!-- Header: name, photo, and links to each section -->
+    <div class="kl-header">
+        <h1>@Model.FullName</h1>
+        <p class="kl-subtitle">@Model.Subtitle</p>
+
+        <div class="kl-header-content">
+            <div class="kl-profile-picture">
+                <img src="@Model.PhotoUrl" alt="@Model.FullName" />
+            </div>
+
+            <div class="kl-navigation">
+                <a href="#about">About Me</a>
+                <a href="#pets">My Pets</a>
+                <a href="#hobbies">Hobbies</a>
+                <p class="kl-highlight">Know more about me!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <section id="about" class="kl-section">
+        <h2>About Me</h2>
+        <div class="kl-three-columns">
+            @foreach (var card in Model.AboutMe)
+            {
+                <div class="kl-column">
+                    <h3>@card.Title</h3>
+                    <p>@card.Text</p>
+                </div>
+            }
+        </div>
+    </section>
+
+    <!-- My Pets -->
+    <section id="pets" class="kl-section">
+        <h2>My Pets</h2>
+        <div class="kl-pets-container">
+            @foreach (var pet in Model.Pets)
+            {
+                <div class="kl-pet">
+                    <img src="@pet.ImageUrl" alt="@pet.Name" />
+                    <p class="kl-pet-name">@pet.Name</p>
+                </div>
+            }
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="kl-section">
+        <h2>Hobbies</h2>
+        <div class="kl-three-columns">
+            @foreach (var hobby in Model.Hobbies)
+            {
+                <div class="kl-column">
+                    <h3>@hobby.Title</h3>
+                    <p>@hobby.Text</p>
+                </div>
+            }
+        </div>
+    </section>
+
+</div>
