@@ -1,0 +1,175 @@
+﻿@model Project_AppDev.Models.StudentViewModel
+@{
+    ViewData["Title"] = "Student Profile";
+    ViewData["FullWidth"] = true;  
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/student.css" asp-append-version="true" />
+}
+
+<div class="ag">
+    <div class="ag-sheet">
+
+        <!-- main - left side -->
+        <div class="ag-main">
+
+            <!-- Profile Tab -->
+            <header id="profile" class="ag-hero">
+                <nav class="ag-tabs">
+                    <a href="#profile">Profile</a> <!-- when profile is click, it will go to the upper part -->
+                    <a href="#education">Education</a> <!-- when education is click, it will go to the lower part to show the education-->
+                    <a href="#sample-works" class="ag-tabs-works">Arts</a> <!-- when arts is click, it will go to the top to show the sample works-->
+                </nav>
+
+                <div class="ag-hero-grid">
+                    <img src="@Model.PhotoUrl" alt="Photo of @Model.FirstName @Model.LastName" class="ag-photo" />
+
+                    <div class="ag-section-course"> <!--undergraduate BSCS-->
+                        <span class="ag-sectionCourse">@Model.Tagline</span>
+
+                        <div class="ag-name-row">
+                            <h1 class="ag-name">
+                                @Model.FirstName<br />@Model.LastName
+                            </h1>
+                            <div class="ag-stats"> 
+                                <div>
+                                    <strong>@Model.YearLevel</strong>
+                                    <span>Year @Model.Section</span>
+                                </div>
+                                <div>
+                                    <strong>@Model.Age</strong>
+                                    <span>Years old</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="ag-bio">@Model.Bio</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- first column in the left -->
+            <div class="ag-body">
+
+                <!-- Skills & What do I help? -->
+                <div class="ag-col-left">
+                    <section>
+                        <h2 class="ag-label">Skills</h2>
+                        <!-- digital illustration -->
+                        <div class="ag-skill">
+                            <div class="ag-skill-icon"><img src="@Model.Skills[0].Icon" alt="@Model.Skills[0].Name" /></div>
+                            <div>
+                                <strong>@Model.Skills[0].Name</strong>
+                                <p>@Model.Skills[0].Description</p>
+                            </div>
+                        </div>
+
+                        <!-- admin support -->
+                        <div class="ag-skill">
+                            <div class="ag-skill-icon"><img src="@Model.Skills[1].Icon" alt="@Model.Skills[1].Name" /></div>
+                            <div>
+                                <strong>@Model.Skills[1].Name</strong>
+                                <p>@Model.Skills[1].Description</p>
+                            </div>
+                        </div>
+
+                        <!-- client focused -->
+                        <div class="ag-skill">
+                            <div class="ag-skill-icon"><img src="@Model.Skills[2].Icon" alt="@Model.Skills[2].Name" /></div>
+                            <div>
+                                <strong>@Model.Skills[2].Name</strong>
+                                <p>@Model.Skills[2].Description</p>
+                            </div>
+                        </div><!-- repeat the process if you want to add -->
+                    </section>
+
+                    <section class="ag-help">
+                        <h2 class="ag-help-title">What do I help?</h2>
+                        <img src="@Model.HelpImageUrl" alt="Sample painting" />
+                        <p>@Model.HelpText</p>
+                        <p><strong>@Model.HelpTraits</strong></p>
+                    </section>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="ag-col-right">
+                    <section class="ag-box">
+                        <h2 class="ag-label">Work Experience</h2>
+                        <ul class="ag-timeline">
+
+                            <!-- Job 1 -->
+                            <li>
+                                <strong>@Model.WorkExperiences[0].Role</strong>
+                                <span class="ag-meta">
+                                    @Model.WorkExperiences[0].Company | @Model.WorkExperiences[0].Years
+                                </span>
+                                <p>@Model.WorkExperiences[0].Description</p>
+                            </li>
+
+                            <!-- Job 2 -->
+                            <li>
+                                <strong>@Model.WorkExperiences[1].Role</strong>
+                                <span class="ag-meta">
+                                    @Model.WorkExperiences[1].Company | @Model.WorkExperiences[1].Years
+                                </span>
+                                <p>@Model.WorkExperiences[1].Description</p>
+                            </li>
+
+                            <!-- Job 3 -->
+                            <li>
+                                <strong>@Model.WorkExperiences[2].Role</strong>
+                                <span class="ag-meta">
+                                    @Model.WorkExperiences[2].Company | @Model.WorkExperiences[2].Years
+                                </span>
+                                <p>@Model.WorkExperiences[2].Description</p>
+                            </li>
+
+                        </ul>
+                    </section>
+                    <!--contact info-->
+                    <div class="ag-row">
+                        <section class="ag-box">
+                            <h2 class="ag-label">Contact</h2>
+                            <ul class="ag-contact">
+                                <li><img src="~/images/phone.png" alt="Phone" /> @Model.Phone</li>
+                                <li><img src="~/images/email.png" alt="Email" /> @Model.Email</li>
+                                <li><img src="~/images/location.png" alt="Location" /> @Model.Location</li>
+                            </ul>
+                        </section>
+
+                        <!-- Education section -->
+                        <section id="education" class="ag-box">
+                            <h2 class="ag-label">Education</h2>
+                            @foreach (var edu in Model.Educations)
+                            {
+                                <div class="ag-edu">
+                                    <strong>@edu.Level</strong>
+                                    <p>@edu.School | @edu.Years | @edu.Honors</p>
+                                </div>
+                            }
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- sample works -->
+                <div id="sample-works" class="ag-works">
+                    <h2 class="ag-works-title">Sample Works</h2>
+
+                    <!-- voleyball -->
+                    <img src="@Model.SampleWorks[0].ImageUrl" alt="@Model.SampleWorks[0].Title" />
+
+                    <!-- cat -->
+                    <img src="@Model.SampleWorks[1].ImageUrl" alt="@Model.SampleWorks[1].Title" />
+
+                    <!-- raphiel's commission -->
+                    <img src="@Model.SampleWorks[2].ImageUrl" alt="@Model.SampleWorks[2].Title" />
+
+                    <!-- dream -->
+                    <img src="@Model.SampleWorks[3].ImageUrl" alt="@Model.SampleWorks[3].Title" />
+                </div>
+         </div>
+</div>
